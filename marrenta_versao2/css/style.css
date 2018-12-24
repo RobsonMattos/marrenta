@@ -76,32 +76,38 @@ header nav .item-menu-header {
 
 .text-box {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); }
-
-.heading-primary {
-  text-transform: uppercase;
-  backface-visibility: hidden; }
-
-.heading-priary-main {
-  display: block;
-  font-size: 60px;
-  font-weight: 400;
-  letter-spacing: 35px;
-  animation: moveInLeft 3s;
-  /* 
-  animation-delay: 3s; 
-  animation-iteration-count: 3;
-  */ }
-
-.heading-priary-sub {
-  display: block;
-  font-size: 20px;
-  font-weight: 400;
-  letter-spacing: 12px;
-  margin-top: 30px;
-  animation: moveInRight 3s; }
+  top: 30%;
+  left: 10%;
+  font-family: "Roboto Slab"; }
+  .text-box .heading-primary {
+    backface-visibility: hidden; }
+  .text-box .heading-priary-title {
+    font-size: 24px; }
+  .text-box .heading-priary-main {
+    display: block;
+    margin-top: 60px;
+    text-transform: uppercase;
+    font-size: 120%;
+    font-weight: 400;
+    animation: moveInLeft 3s;
+    /* 
+    animation-delay: 3s; 
+    animation-iteration-count: 3;
+    */ }
+  .text-box .vazio {
+    width: 20px;
+    height: 70px; }
+  .text-box .bt_bb_link {
+    box-shadow: 0 0 0 1px #ffffff inset;
+    color: #fff;
+    background-color: transparent;
+    font-size: 14px;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 0 100px; }
 
 /*Stick nav*/
 .sticky {
@@ -244,8 +250,7 @@ section {
   margin: auto; }
 
 h1, h2, h3 {
-  font-weight: 300;
-  text-transform: uppercase; }
+  font-weight: 300; }
 
 h1 {
   margin-top: 0;
