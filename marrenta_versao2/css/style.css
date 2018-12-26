@@ -366,8 +366,12 @@ h3 {
   border-bottom: 1px solid transparent;
   transition: border-bottom 0.2s, color 0.2s; }
 
-.detalhe-section img {
+.detalhe-section .imagem-content {
   display: flex;
   flex-flow: column nowrap;
-  padding-left: 20px;
+  padding-left: 0;
   padding-right: 20px; }
+
+.detalhe-section img {
+  width: 400px;
+  height: 400px; }

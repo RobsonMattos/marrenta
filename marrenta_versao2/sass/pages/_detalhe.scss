@@ -1,8 +1,12 @@
 .detalhe-section {
-  img {
+  .imagem-content {
     display: flex;
     flex-flow: column nowrap;
     padding-left: 0;
     padding-right: 20px;
+  }
+  img {
+    width: 400px;
+    height:400px;
   }
 }
