@@ -12,6 +12,9 @@ header {
   background-image: url("../../img/hero_home_beer_01.jpg");
   background-size: cover;
   background-position: 50% 0px;
+  .navbar-toggler {
+    background-color: #ffffff4f;
+  }
   ul {
     display: flex;
     align-items: center;

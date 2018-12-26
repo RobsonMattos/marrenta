@@ -1,0 +1,40 @@
+@media only screen and (max-width: 1200px) {
+    
+}
+
+@media only screen and (max-width: 1000px) {
+    header nav img {
+        margin: 0px 0px;
+        width: 100px;
+    }
+    .nav-link {
+        display: contents;
+    }
+    .text-box {
+        left: 2%;
+        top: 40%;  
+    }
+    
+    .text-box .heading-priary-main {
+        font-size: 90%;
+        margin-top: 30px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    header  {
+        background-position: 80% 0px;
+    }
+}
+
+@media only screen and (max-width: 799px) {
+    .text-box .heading-priary-main {
+        font-size: 80%;
+    }
+}
+
+@media only screen and (max-width: 639px) {
+    .text-box .heading-priary-main {
+        font-size: 50%;
+    }
+}

@@ -10,22 +10,24 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
         crossorigin="anonymous">
-    <link href="css/grid.css" rel="stylesheet" type="text/css">
-    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="./css/style.css" rel="stylesheet" type="text/css">
+    <link href="./css/queries.css" rel="stylesheet" type="text/css">
     <script src="https://unpkg.com/ionicons@4.4.6/dist/ionicons.js"></script>
 
 </head>
 
 <body>
     <header id="home" class="js-home-section">
-        <nav class="navbar">
-            <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#">
+                <img id="img-logo" src="img/logo-marrenta.png" class="d-inline-block align-top" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-            </button> -->
-            <img src="img/logo-marrenta.png" alt="">
-            <div class="d-inline-flex justify-content-end">
-                <ul class="nav mr-auto">
+            </button>
+            <div id="navbarNavDropdown" class="collapse navbar-collapse justify-content-end">
+                <ul class="nav">
                     <li class="nav-item item-menu-header">
                         <a class="nav-link js-home" href="#home">Home</a>
                     </li>
@@ -75,56 +77,86 @@
         </div>
     </header>
 
+    <!-- seção de detalhe -->
     <section id="detalhe" class="detalhe-section">
         <div class="row">
-            <div class="d-flex justify-content-between">
+            <div class="col-4">
                 <img src="./img/beer_transparent.png" class="imagem-detalhe" alt="beer_transparent.png">
-            </div>
-            <div class="d-flex justify-content-between">
-                <div class="bt_bb_column_content">
-                    <div class="bt_bb_headline bt_bb_font_weight_normal bt_bb_dash_none bt_bb_size_normal bt_bb_align_inherit">
-                        <h2><span class="bt_bb_headline_content"><span>DETAILED BEER DRINKING INSTRUCTIONS</span></span></h2>
-                    </div>
-                    <div class="bt_bb_border_style_none"></div>
-                    <div class="bt_bb_row_inner" data-structure="6-6">
-                        <div class=" animated" data-width="6">
-                            <div class="bt_bb_column_inner_content">
-                                <div class="bt_bb_align_inherit">
-                                    <a href="#" target="_self" class="bt_bb_icon_holder"><img src="./img/beer-mug.png"
-                                            alt=""></a>
+            </div> <!-- Fim col 4 -->
+            <div class="col-8">
+                <div class="bt_bb_headline bt_bb_font_weight_normal bt_bb_dash_none bt_bb_size_normal bt_bb_align_inherit">
+                    <h2><span class="bt_bb_headline_content"><span>DETAILED BEER DRINKING <br>INSTRUCTIONS</span></span></h2>
+                </div> <!-- Fim cabeçalho -->
+                <div class="bt_bb_border_style_none"></div>
+                <div class="col">
+                    <div class="row">
+                        <div class="col">
+                            <div class="row">
+                                <div class="col-3">
+                                    <a href="#" target="_self" class="bt_bb_icon_holder"><img class="icon-detalhe" src="./img/beer-mug.png"
+                                            alt="">
+                                    </a>
+                                </div>
+                                <div class="col-9">
                                     <div class="bt_bb_service_content">
                                         <div class="bt_bb_service_content_title"><a href="#" target="_self">Best
                                                 ingredients</a></div>
-                                        <div class="bt_bb_service_content_text">Leverage agile frameworks to provide a
+                                        <div class="bt_bb_service_content_text">Leverage agile frameworks to
+                                            provide a
                                             robust synopsis for high level overviews, iterative approaches.</div>
                                     </div>
                                 </div>
-                                <div class="bt_bb_border_style_none"></div>
-                                <div class="bt_bb_align_inherit"><a href="#" target="_self" class="bt_bb_icon_holder"><img
-                                            src="./img/barrel.png" alt=""></a>
-                                    <div class="bt_bb_service_content">
-                                        <div class="bt_bb_service_content_title"><a href="#" target="_self">Farming
-                                                practices</a></div>
-                                        <div class="bt_bb_service_content_text">Organically grow the holistic world
-                                            view of disruptive innovation via workplace diversity and empowerment.</div>
-                                    </div>
-                                </div>
-                                <div class="bt_bb_separator bt_bb_bottom_spacing_medium bt_bb_border_style_none"></div>
                             </div>
                         </div>
-                        <div class="animated" data-width="6">
-                            <div class="bt_bb_column_inner_content">
-                                <div class="bt_bb_align_inherit"><a href="#" target="_self" class="bt_bb_icon_holder"><img
-                                            src="./img/pint-of-beer.png" alt=""></a>
+                        <div class="col">
+                            <div class="row">
+                                <div class="col-3">
+                                    <a href="#" target="_self" class="bt_bb_icon_holder">
+                                        <img class="icon-detalhe" src="./img/barrel.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="col-9">
                                     <div class="bt_bb_service_content">
-                                        <div class="bt_bb_service_content_title"><a href="#" target="_self">Our process</a></div>
-                                        <div class="bt_bb_service_content_text">Corporate strategy foster collaborative
-                                            thinking to further the overall value proposition.</div>
+                                        <div class="bt_bb_service_content_title">
+                                            <a href="#" target="_self">Our process</a>
+                                        </div>
+                                        <div class="bt_bb_service_content_text">Corporate strategy foster
+                                            collaborative thinking to further the overall value proposition.
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="bt_bb_border_style_none"></div>
-                                <div class="bt_bb_align_inherit"><a href="#" target="_self" class="bt_bb_icon_holder"><img
-                                            src="./img/tuba.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- fim col 4 -->
+                <div class="col">
+                    <div class="row">
+                        <div class="col">
+                            <div class="row">
+                                <div class="col-3">
+                                    <a href="#" target="_self" class="bt_bb_icon_holder">
+                                        <img class="icon-detalhe" src="./img/pint-of-beer.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="col-9">
+                                    <div class="bt_bb_service_content">
+                                        <div class="bt_bb_service_content_title">
+                                            <a href="#" target="_self">Farming practices</a>
+                                        </div>
+                                        <div class="bt_bb_service_content_text">Organically grow the holistic world
+                                            view of disruptive innovation via workplace diversity and empowerment.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="row">
+                                <div class="col-3">
+                                    <a href="#" target="_self" class="bt_bb_icon_holder"><img class="icon-detalhe" src="./img/tuba.png"
+                                            alt=""></a>
+                                </div>
+                                <div class="col-9">
                                     <div class="bt_bb_service_content">
                                         <div class="bt_bb_service_content_title"><a href="#" target="_self">Story
                                                 behind</a></div>
@@ -132,13 +164,12 @@
                                             indicators offline to maximise the long tail keeping your eye.</div>
                                     </div>
                                 </div>
-                                <div class="bt_bb_separator bt_bb_bottom_spacing_medium bt_bb_border_style_none"></div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
+            </div> <!-- fim col 4 -->
+        </div><!-- Fim col 8 -->
     </section>
 
     <section id="produtos" class="section-produtos js--section-produtos">
