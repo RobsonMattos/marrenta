@@ -72,10 +72,6 @@ header nav ul a {
 header nav .item-menu-header {
   margin-right: 15px; }
 
-.menu {
-  display: flex;
-  margin-left: 150px; }
-
 .text-box {
   position: absolute;
   top: 30%;
@@ -98,7 +94,7 @@ header nav .item-menu-header {
     */ }
   .text-box .vazio {
     width: 20px;
-    height: 70px; }
+    height: 8%; }
   .text-box .bt_bb_link {
     box-shadow: 0 0 0 1px #ffffff inset;
     color: #fff;
